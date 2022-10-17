@@ -18,7 +18,7 @@
 # iloczyn = (a * g)
 # sr_geo = (iloczyn ** 0.5)
 #
-# sr_ary = (iloczyn / 2)
+# sr_ary = ((a + b) / 2)
 #
 # if (sr_ary > sr_geo):
 #     print("TAK");
