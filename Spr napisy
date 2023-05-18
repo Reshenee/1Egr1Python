@@ -1,0 +1,141 @@
+# Napisz kod sprawdzący czy jeden wyraz znajduje się w drugim
+
+# napis1 = "bober"
+# napis2 = "nieober"
+#
+# if napis1 in napis2:
+#     print("Jest")
+# else:
+#     print("nie Jest")
+
+# Usuń wszystkie powtarzające się litery
+
+# napis = input()
+# napis_red = ""
+# for litera in napis:
+#     if napis.count(litera) == 1:
+#         napis_red += litera
+# print(napis_red)
+
+
+
+# Usuń wszystkie powtarzające się litery pod rząd
+# napis = " " + input() + " "
+# napis_red = ""
+# for i in range(len(napis) - 1):
+#     if napis[i] != napis[i + 1] and napis[i] != napis[i - 1]:
+#         napis_red += napis[i]
+# print(napis_red)
+
+
+# Usuń wszystkie nie powtarzające się litery
+# napis = input()
+# napis_red = ""
+# for i in napis:
+#     if napis.count(i) > 1:
+#         napis_red += i
+# print(napis_red)
+
+# Zamień wyraz parami liczb od końca
+
+# napis = input()
+# print(reversed(napis))
+
+
+# Zamień wyraz parami liczb od konca
+
+# reverse function
+
+# def reversed4(napis):
+#     reversed_text =''.join(reversed(napis))
+#     return reversed_text
+
+# v1
+# text = "havudepe"
+# temp = ([text[i:i + 2] for i in range(0, len(text), 2 )])
+# print(temp)
+# for i in [temp[::-1]]:
+#     print(i)
+
+
+
+# v2
+# print(reversed4([text[i:i + 2] for i in range(0, len(text), 2 )]))
+
+# v3
+# print(reversed4(text))
+
+
+
+# print(reversed([text[i:i + n: -1] for i in range(0, len(text), n)]))
+
+
+# Sprawdż która literka dominuje w wyrazie i ile jest dominujących podaj vice dominującą i dominującą
+
+# jezeli 1 dominant i vice dominant
+# import collections
+# napis = input()
+#
+# temp = (collections.Counter(napis).most_common())
+# print(temp)
+# print("Dominująca:",(temp[0]))
+# print("Vice Dominująca:",(temp[1]))
+
+
+
+
+
+
+
+
+# Posortuj napis od konca i normalnie
+# def reversed4(napis):
+#     reversed_text =''.join(reversed(napis))
+#     return reversed_text
+
+
+# napis = input()
+# print(sorted(napis))
+# print(reversed4(sorted(napis)))
+
+
+# 1. Wczytaj dowolny napis i wypisz z niego pierwszą i ostatnią literkę
+# napis = input()
+# print(napis[0], napis[-1])
+# 2. Wczytaj dowolny napis i wypisz z niego literki bez pierwszej i ostatniej
+# print(napis[1:-1])
+# 3. Wypisz 4 ostatnie literki z wpisanego napisy w kolejności od końca
+# print(napis[:-5:-1])
+# 4. Waga napisu to suma kodów ascii jego liter. Zważ wpisny napis
+# suma = 0
+# napis = "negri"
+# for i in napis:
+#     suma += ord(i)
+#     print(chr(ord(i) % 26)))
+# print(suma)
+# 5. Policz ile we wpisanym napisie jest liter A.
+# napis = input()
+# print(napis.count("a"))
+# 6. Podaj dominującą literkę we wpisanym napisie.
+# Niech to będzie tylko jedna literka.
+
+# 7. Znajdź literkę-dominantę w napisie (może ich być kilka, a może nie być żadnej)
+
+
+# 8. Sprawdź czy w napisie występują trzy podciągi "LA"
+# napis = input()
+# if napis.count("LA") >= 3:
+#     print("Tak")
+# else:
+#     print("Nie")
+
+# 9. Znajdź "średnią literkę" w napisie. (Przejdź na kody ASCII i jeśli wynik będzie
+# ułamkowy to zaokrąglij średnią w dół)
+
+# 10. Wypisz literki, których nie ma w napisie
+
+# 11. Znajdź ilość trzyznakowych palindromów w napisie (trzy literki koło siebie)
+# napis = " " + input() + " "
+# for i in range(len(napis) - 1):
+#     if napis[i] == napis[i + 1] and napis[i] == napis[i - 1]:
+#         print(napis[i] * 3, " ")
